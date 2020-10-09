@@ -1,0 +1,116 @@
+.footer {
+  width: 100%;
+  height: 266px;
+  background-color: var(--very-light-pink);
+  position: relative;
+  bottom: 0;
+  padding-left: 10%;
+  h3 {
+    padding-top: 10%;
+    font-family: Optima;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--greyish-brown);
+  }
+  ul {
+    list-style-type: none;
+    margin-left: -20%;
+    li {
+      font-family: Calibri;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      text-align: left;
+      color: var(--greyish-brown);
+    }
+  }
+  input {
+    width: 200px;
+    height: 46px;
+  }
+  input::placeholder {
+    width: 179px;
+    height: 16px;
+    font-family: Calibri;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #a7a9ac;
+  }
+  button {
+    transform: translate(170%, -100%);
+    width: 107px;
+    height: 46px;
+    background-color: #61aeb9;
+    font-family: Calibri;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+  }
+}
+.copyrights {
+  width: 100%;
+  height: 74px;
+  background-color: var(--blue-green);
+  position: relative;
+  bottom: 0;
+  ul {
+    position: absolute;
+    transform: translateY(45%);
+    padding: 5px;
+    width: auto;
+    height: 15%;
+    list-style-type: none;
+    margin-left: 10%;
+    padding: 0;
+    position: absolute;
+    li {
+      float: left;
+      a {
+        font-family: Calibri;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        text-transform: capitalize;
+        display: block;
+        padding: 8px;
+      }
+    }
+  }
+  .right {
+    font-family: Calibri;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    float: right;
+    margin-right: 14%;
+    padding: 15px;
+  }
+}
