@@ -1,0 +1,108 @@
+.help {
+  width: 100%;
+  height: 658px;
+  background-color: #ffffff;
+  .title {
+    padding: 60px;
+    margin: auto;
+    width: 60%;
+    height: 98px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    h1 {
+      font-family: Optima;
+      font-size: 36px;
+      color: var(--teal-blue);
+    }
+    h2 {
+      font-family: SegoeUI;
+      font-size: 20px;
+      color: #61aeb9;
+    }
+  }
+  .article_group {
+    padding-top: 50px;
+    height: 560px;
+    margin: auto;
+    width: 60%;
+    .arrow {
+      transform: translateY(25%);
+      i {
+        margin: auto;
+      }
+    }
+    .articles {
+      width: 360px;
+      height: 300px;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      font-style: normal;
+      font-stretch: normal;
+      .article {
+        padding: 10px;
+        width: 360px;
+        height: 300px;
+        position: absolute;
+        .article_body {
+          transform: translateY(-420%);
+        }
+        .article_title {
+          transform: translateY(-2900%);
+        }
+        .shadow {
+          height: 300px;
+          background-color: #000000;
+          z-index: 999;
+          transform: translateY(-100%);
+          opacity: 0.72;
+        }
+        .back_image {
+          z-index: 1;
+          width: 100%;
+          height: 300px;
+        }
+        .circle_icon {
+          margin: auto;
+          width: 22%;
+          height: 75px;
+          border: solid 6px #ffffff;
+          border-radius: 100%;
+          background-color: var(--teal-blue);
+          transform: translateY(-850%);
+          img {
+            margin: auto;
+            width: 75%;
+            transform: translateY(50%);
+          }
+        }
+      }
+      h3 {
+        position: relative;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.2;
+      }
+      p {
+        position: relative;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 15px;
+        font-weight: normal;
+        line-height: 1.2;
+      }
+      h1 {
+        position: relative;
+        font-family: SegoeUI;
+        font-size: 50px;
+        font-weight: bold;
+        font-style: normal;
+        line-height: 0.9;
+      }
+    }
+  }
+}
