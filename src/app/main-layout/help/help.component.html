@@ -6,7 +6,7 @@
     </h2>
   </div>
   <div class="row article_group">
-    <div class="arrow col-md-1">
+    <div class="arrow">
       <i
         class="fa fa-angle-left fa-3x"
         [ngStyle]="{ color: curr_index - 2 === 0 ? '#c2c2c2' : '#44a7b1' }"
@@ -14,7 +14,7 @@
       ></i>
     </div>
     <div class="articles" *ngFor="let article of articles_shown">
-      <div class="article col-md-3">
+      <div class="article col-lg-4">
         <div
           class="back_image"
           [ngStyle]="{ 'background-image': 'url(' + article.img + ')' }"
@@ -31,7 +31,7 @@
         </div>
       </div>
     </div>
-    <div class="arrow col-md-1">
+    <div class="arrow">
       <i
         class="fa fa-angle-right fa-3x"
         [ngStyle]="{
