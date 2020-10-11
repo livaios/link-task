@@ -8,18 +8,16 @@ a {
   position: fixed;
   top: 0;
   z-index: 999;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   .linkdevlogo {
     width: 9%;
     height: 60%;
     object-fit: contain;
-    margin-left: 14.6%;
-    margin-top: 32px;
-    margin-bottom: 31px;
   }
   .group {
     float: right;
-    margin-right: 14.6%;
-    margin-top: 32px;
     .auth {
       a {
         padding: 5px;
@@ -44,7 +42,6 @@ a {
     }
 
     .lang {
-      margin-top: 20%;
       transform: translate(28px, -20px);
       a {
         margin: auto;
