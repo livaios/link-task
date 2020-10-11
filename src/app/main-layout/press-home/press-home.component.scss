@@ -1,0 +1,117 @@
+.press {
+  width: 100%;
+  height: 658px;
+  background-color: #ffffff;
+  .title {
+    padding-top: 60px;
+    margin: auto;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--teal-blue);
+    font-family: Optima;
+    h1 {
+      font-size: 36px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+  }
+  .article_group {
+    padding-top: 50px;
+    height: 560px;
+    margin: auto;
+    width: 70%;
+    .articles {
+      width: 250px;
+      height: 340px;
+      letter-spacing: normal;
+      color: #ffffff;
+      font-style: normal;
+      font-stretch: normal;
+      .article {
+        padding: 0px;
+        width: 250px;
+        height: 340px;
+        position: absolute;
+        .article_body {
+          width: 230px;
+          height: 72px;
+          transform: translateY(-900%);
+          p {
+            position: relative;
+            margin-left: 10px;
+            font-size: 15px;
+            font-weight: normal;
+            line-height: 1.2;
+            text-align: left;
+          }
+        }
+        .btn-clear {
+          transform: translateY(-1400%);
+          width: 124px;
+          height: 46px;
+          background-color: #a7a9ac;
+          font-family: Optima;
+          font-size: 18px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.9;
+          letter-spacing: normal;
+          text-align: center;
+          color: #f2f0f0;
+          text-transform: capitalize;
+          margin-left: 10px;
+        }
+        .article_title {
+          transform: translateY(-465%);
+          font-family: Optima;
+          font-size: 18px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.67;
+          letter-spacing: normal;
+          text-align: left;
+          color: #ffffff;
+          padding-left: 10px;
+          h3 {
+            font-size: 18px;
+          }
+          h2 {
+            font-size: 30px;
+          }
+          h1 {
+            font-size: 60px;
+          }
+        }
+        .shadow {
+          height: 340px;
+          background-color: #000000;
+          z-index: 999;
+          transform: translateY(-100%);
+          opacity: 0.72;
+          &:hover {
+            opacity: 1;
+            background-color: var(--apple);
+          }
+        }
+        .back_image {
+          z-index: 1;
+          width: 100%;
+          height: 340px;
+        }
+        &:hover {
+          .btn-clear {
+            border: solid 1.5px #ffffff;
+            background-color: var(--apple);
+          }
+        }
+      }
+    }
+  }
+}

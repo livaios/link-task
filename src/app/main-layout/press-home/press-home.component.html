@@ -1,0 +1,28 @@
+<div class="press">
+  <div class="title">
+    <h2>Our Latest</h2>
+    <h1>Press Releases</h1>
+  </div>
+
+  <div class="row article_group">
+    <div class="articles" *ngFor="let article of home_articles">
+      <div class="article col-md-3">
+        <div
+          class="back_image"
+          [ngStyle]="{ 'background-image': 'url(' + article.urlToImage + ')' }"
+        ></div>
+        <div class="shadow"></div>
+
+        <div class="article_title">
+          <h1>{{ article.publishedAt | date: 'dd' }}</h1>
+          <h2>{{ article.publishedAt | date: 'MMMM' }}</h2>
+          <h3>{{ article.publishedAt | date: 'EEEE y ' }}</h3>
+        </div>
+        <div class="article_body">
+          <p>{{ article.title }}</p>
+        </div>
+        <a class="btn btn-clear btn-sm green" href="#">read more</a>
+      </div>
+    </div>
+  </div>
+</div>
