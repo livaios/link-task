@@ -1,0 +1,106 @@
+.footer {
+  width: 100%;
+  background-color: var(--very-light-pink);
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 16px;
+  h3 {
+    font-family: Optima;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--greyish-brown);
+  }
+  ul {
+    list-style-type: none;
+    margin-left: -40px;
+    li {
+      font-family: Calibri;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      text-align: left;
+      color: var(--greyish-brown);
+    }
+  }
+  input {
+    width: 200px;
+    height: 46px;
+    @media screen and (max-width: 768px) {
+      width: 150px;
+      height: 30px;
+    }
+  }
+  input::placeholder {
+    width: 179px;
+    height: 16px;
+    font-family: Calibri;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #a7a9ac;
+    @media screen and (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+  button {
+    transform: translate(170%, -100%);
+    width: 107px;
+    height: 46px;
+    background-color: #61aeb9;
+    font-family: Calibri;
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: left;
+    color: #ffffff;
+    @media screen and (max-width: 768px) {
+      width: 70px;
+      height: 30px;
+      transform: translate(0, 0);
+      font-size: 12px;
+    }
+  }
+}
+.copyrights {
+  width: 100%;
+  background-color: var(--blue-green);
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  ul {
+    transform: translateY(45%);
+    width: auto;
+    list-style-type: none;
+    li {
+      float: left;
+      padding: 8px;
+      a {
+        font-family: Calibri;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: left;
+        color: #ffffff;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .right {
+    font-family: Calibri;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    color: #ffffff;
+  }
+}

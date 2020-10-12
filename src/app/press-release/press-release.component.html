@@ -1,0 +1,96 @@
+<div class="breadcrumbs">
+  <div>
+    <div *ngFor="let unit of path; let index = index">
+      <div *ngIf="index != path.length - 1; else viewLast">
+        <a href="{{ unit.url }}">{{ unit.path }}</a>
+        <i class="fas fa-chevron-right"></i>
+      </div>
+      <ng-template #viewLast>
+        <a href="{{ unit.url }}" class="last">{{ unit.path }}</a>
+      </ng-template>
+    </div>
+  </div>
+
+  <div class="pictures">
+    <img src="assets/printer.png" />
+    <img src="assets/interface.png" />
+    <img src="assets/symbol.png" />
+  </div>
+</div>
+<div class="press" *ngIf="!globalService.selectedArticle; else viewArticle">
+  <div class="title">
+    <h1>PRESS RELEASE</h1>
+  </div>
+  <div class="content">
+    <div class="title-bar">
+      <select
+        class="selectpicker"
+        [(ngModel)]="activeFilter"
+        (change)="filter($event.target.value)"
+      >
+        <option selected disabled value="-1">Category</option>
+        <option value="-1">All</option>
+        <option *ngFor="let category of categories" value="{{ category.id }}">
+          {{ category.name }}
+        </option>
+      </select>
+      <div class="search_input">
+        <div class="input-group mb-3">
+          <input
+            placeholder="Title"
+            type="text"
+            id="search_name"
+            [(ngModel)]="search"
+            (keyup)="searchKeyUp.next($event)"
+          />
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row article_group">
+      <div
+        class="articles"
+        *ngFor="
+          let article of press_articles
+            | filterArticles: activeFilter:size
+            | searchArticles: searchValue
+        "
+      >
+        <div class="article col-md-3">
+          <div
+            class="back_image"
+            [ngStyle]="{
+              'background-image': 'url(' + article.urlToImage + ')'
+            }"
+          ></div>
+          <div class="shadow"></div>
+
+          <div class="article_title">
+            <h1>{{ article.publishedAt | date: 'dd' }}</h1>
+            <h2>{{ article.publishedAt | date: 'MMMM' }}</h2>
+            <h3>{{ article.publishedAt | date: 'EEEE y ' }}</h3>
+          </div>
+          <div class="article_body">
+            <p>{{ article.title }}</p>
+          </div>
+          <a class="btn btn-clear btn-sm green" (click)="readMore(article)"
+            >read more</a
+          >
+        </div>
+      </div>
+      <a
+        *ngIf="press_articles.length > size"
+        class="btn btn-clear btn-sm more"
+        (click)="loadMore()"
+        >load more</a
+      >
+    </div>
+  </div>
+</div>
+<ng-template #viewArticle>
+  <app-news-listing [data]="globalService.selectedArticle"></app-news-listing>
+</ng-template>

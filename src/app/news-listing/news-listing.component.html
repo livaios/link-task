@@ -1,0 +1,148 @@
+<div class="breadcrumbs">
+  <div>
+    <div *ngFor="let unit of path; let index = index">
+      <div *ngIf="index != path.length - 1; else viewLast">
+        <a href="{{ unit.url }}">{{ unit.path }}</a>
+        <i class="fas fa-chevron-right"></i>
+      </div>
+      <ng-template #viewLast>
+        <a href="{{ unit.url }}" class="last">{{
+          unit.path.split(' - ')[0]
+        }}</a>
+      </ng-template>
+    </div>
+  </div>
+  <div class="pictures">
+    <img src="assets/printer.png" />
+    <img src="assets/interface.png" />
+    <img src="assets/symbol.png" />
+  </div>
+</div>
+<div class="news">
+  <div class="title">
+    <h1>PRESS RELEASE</h1>
+  </div>
+  <div class="content">
+    <div class="article row">
+      <div>
+        <div
+          class="back_image"
+          [ngStyle]="{ 'background-image': 'url(' + data.urlToImage + ')' }"
+        ></div>
+        <h1>{{ data.title.split(' - ')[0] }}</h1>
+        <h3>{{ data.publishedAt | date: 'dd MMMM yyyy' }}</h3>
+        <p>
+          {{ data.content }}
+        </p>
+        <p>
+          ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elit leo,
+          tincidunt ac erat a, pellentesque sodales purus. Ut id ullamcorper
+          ipsum. Praesent lacinia cursus urna. Curabitur magna odio, porttitor
+          ut erat ultrices, blandit vehicula orci. Donec faucibus, nibh eu
+          volutpat placerat, libero dolor sagittis arcu, eget faucibus est dui
+          molestie mi. Nulla ac metus quis lorem elementum molestie et nec
+          nulla. Sed at urna quis tellus consectetur pulvinar. In non mauris
+          quis neque fermentum mollis at vulputate purus. Phasellus ac purus vel
+          neque fringilla ornare. Ut commodo nunc in erat commodo scelerisque.
+          Curabitur a mauris scelerisque, interdum magna vel, elementum lorem.
+          Quisque sed neque consectetur, iaculis ex eu, venenatis risus. Ut vel
+          lacus a erat mollis semper a vestibulum ligula. Fusce in erat sodales,
+          cursus eros sed, congue sem. Integer rutrum purus sit amet mi aliquet
+          pulvinar. Cras imperdiet nunc vitae velit rutrum congue. Integer
+          consequat erat eget malesuada malesuada. Integer ut cursus magna,
+          vitae tincidunt augue. Maecenas in pulvinar massa. Nulla feugiat
+          pharetra libero et tincidunt. Nulla eu nulla quis purus fringilla
+          maximus. Proin auctor congue dignissim. Sed in dui quis lorem
+          elementum tempor. Donec eget congue libero, eu suscipit nibh. Nullam
+          sodales felis id est euismod rutrum. Mauris fringilla vitae leo
+          iaculis condimentum. Sed imperdiet tellus metus, at sodales lorem
+          varius at. Aliquam scelerisque sit amet odio sit amet feugiat.
+          Vestibulum nec justo sagittis, pellentesque tellus nec, placerat elit.
+          Integer dignissim, ipsum quis venenatis faucibus, eros odio faucibus
+          urna, a lobortis odio ex eget metus. Cras tempor luctus aliquet. Nulla
+          ultricies massa eget nisl rutrum, vel molestie enim ornare. Ut est
+          quam, viverra in est convallis, gravida dignissim eros. Mauris in diam
+          eleifend lorem volutpat congue. Etiam vitae nisi tincidunt, suscipit
+          erat nec, eleifend dolor. Donec tincidunt dolor leo, vel ullamcorper
+          est varius eget. Nulla tempus malesuada odio in cursus. Fusce varius
+          bibendum justo id imperdiet. Duis vestibulum erat sed fermentum
+          laoreet. Duis dapibus vitae ipsum sit amet finibus. Curabitur auctor,
+          libero nec ornare ultricies, tellus erat pellentesque nisi, a viverra
+          dui tortor tincidunt turpis. Aliquam erat volutpat. Aenean sit amet
+          mollis magna. Curabitur varius sagittis orci vitae porta. Cras
+          imperdiet hendrerit diam sit amet ornare. Maecenas dictum ullamcorper
+          lacus in pharetra. Pellentesque habitant morbi tristique senectus et
+          netus et malesuada fames ac turpis egestas. Integer convallis
+          facilisis sapien, ut pellentesque arcu tincidunt quis. Nulla justo
+          felis, commodo vitae hendrerit eget, rutrum sit amet tellus. Nullam
+          ultricies accumsan bibendum. Aenean dolor elit, dapibus vitae tellus
+          nec, convallis condimentum odio. Nam laoreet vel ligula tristique
+          imperdiet. Morbi aliquet, velit id consectetur aliquam, felis velit
+          pharetra metus, vitae varius est purus vitae nunc. Proin ultrices
+          vitae purus vitae hendrerit. Aenean dapibus enim a placerat placerat.
+          Nam aliquet nisl vel porta fermentum. Vestibulum faucibus, justo non
+          dapibus hendrerit, turpis nisi pulvinar nisi, nec ullamcorper turpis
+          felis et mauris. Quisque id volutpat eros. Nam lacinia in justo a
+          consequat. Aliquam et consectetur ligula. Cras eget mi ac massa
+          ultrices mollis.
+        </p>
+      </div>
+    </div>
+    <div class="attach row">
+      <h1>attachements</h1>
+      <div class="items row">
+        <div class="item col-lg-7">
+          <h2>AL Jalila Foundation.PDF</h2>
+          <div class="btn"><i class="fas fa-download"></i></div>
+        </div>
+        <div class="item col-lg-7">
+          <h2>AL Jalila Foundation.PDF</h2>
+          <div class="btn"><i class="fas fa-download"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="recommend row">
+      <h1>YOU MAY ALSO BE INTERESTED IN</h1>
+      <div class="items row">
+        <div class="item layer1 col-lg-3">
+          <div class="shadow">
+            <div class="shadow green">
+              <div class="content">
+                <h1>About MRMI</h1>
+                <p>
+                  Mohammed Bin Rashid Al Maktoum Global Initiatives was
+                  inaugurated on 4 October 2015.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="btn"><i class="fas fa-chevron-right"></i></div>
+        </div>
+        <div class="item layer2 col-lg-3">
+          <div class="shadow">
+            <div class="shadow green">
+              <h1>Our Message</h1>
+              <p>
+                As a young Foundation, we are inspired by our young nation whose
+                achievements have surpassed.
+              </p>
+            </div>
+          </div>
+          <div class="btn"><i class="fas fa-chevron-right"></i></div>
+        </div>
+        <div class="item layer3 col-lg-3">
+          <div class="shadow">
+            <div class="shadow green">
+              <h1>Our Vision, Mission & Goals</h1>
+              <p>
+                Vision Al Jalila Foundation is a global philanthropic
+                organisation.
+              </p>
+            </div>
+          </div>
+          <div class="btn"><i class="fas fa-chevron-right"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

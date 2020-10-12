@@ -1,0 +1,35 @@
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 56px;
+  opacity: 0.95;
+  z-index: 999;
+  background-color: #f2f0f0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: translateY(270%);
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+    li {
+      float: left;
+      a {
+        font-family: Optima;
+        font-size: 15px;
+        line-height: 1.2;
+        text-align: left;
+        color: var(--teal-blue);
+        text-transform: capitalize;
+        padding: 8px;
+      }
+    }
+  }
+  .search {
+    width: 24px;
+    height: 24px;
+    color: var(--teal-blue);
+  }
+}

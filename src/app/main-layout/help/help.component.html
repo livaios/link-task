@@ -1,0 +1,44 @@
+<div class="help">
+  <div class="title">
+    <h1>How we have helped</h1>
+    <h2>
+      See how Al Jalila Foundation have promoted change locally and to the world
+    </h2>
+  </div>
+  <div class="row article_group">
+    <div class="arrow">
+      <i
+        class="fa fa-angle-left fa-3x"
+        [ngStyle]="{ color: curr_index - 2 === 0 ? '#c2c2c2' : '#44a7b1' }"
+        (click)="prev()"
+      ></i>
+    </div>
+    <div class="articles" *ngFor="let article of articles_shown">
+      <div class="article col-lg-4">
+        <div
+          class="back_image"
+          [ngStyle]="{ 'background-image': 'url(' + article.img + ')' }"
+        ></div>
+        <div class="shadow"></div>
+        <div class="circle_icon">
+          <img src="assets/layer-58.png" />
+        </div>
+        <h3 class="article_title">{{ article.title }}</h3>
+        <div class="article_body">
+          <h1>{{ article.data.number }}</h1>
+          <h3>{{ article.data.type }}</h3>
+          <p>{{ article.data.details }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="arrow">
+      <i
+        class="fa fa-angle-right fa-3x"
+        [ngStyle]="{
+          color: curr_index >= articles.length ? '#c2c2c2' : '#44a7b1'
+        }"
+        (click)="next()"
+      ></i>
+    </div>
+  </div>
+</div>
