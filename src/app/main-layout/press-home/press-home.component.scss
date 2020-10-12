@@ -44,6 +44,8 @@
           width: 230px;
           height: 72px;
           transform: translateY(-900%);
+          -ms-transform: translateY(-900%);
+          -webkit-transform: translateY(-900%);
           p {
             position: relative;
             margin-left: 10px;
@@ -54,6 +56,8 @@
         }
         .btn-clear {
           transform: translateY(-1400%);
+          -ms-transform: translateY(-1400%);
+          -webkit-transform: translateY(-1400%);
           width: 124px;
           height: 46px;
           background-color: #a7a9ac;
@@ -67,6 +71,8 @@
         }
         .article_title {
           transform: translateY(-445%);
+          -ms-transform: translateY(-445%);
+          -webkit-transform: translateY(-445%);
           font-family: Optima;
           font-size: 18px;
           line-height: 1.67;
