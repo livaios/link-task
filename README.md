@@ -52,7 +52,9 @@
     Documentation for steps of work, and changes if any on the Design.
     Final output should be organized.
     Deadline: 7 days from Time request is sent.
-        
+    Edits:
+    It was found that creating a separate page for the Press Releases would be more efficient and convenient for the use of breadcrumbs.  
+    The webflow is clear and accomodated to the user experience.
 # Good luck
     Front-end Department
 
