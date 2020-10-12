@@ -26,7 +26,6 @@ export class PressReleaseComponent implements OnInit {
   size: number = 8
 
   ngOnInit(): void {
-    this.globalService.selectedArticle = null
     this.path = [
       { path: 'home', url: '../home' },
       { path: 'media center', url: '../home' },
@@ -51,9 +50,5 @@ export class PressReleaseComponent implements OnInit {
   }
   loadMore() {
     this.size = this.size + 4
-  }
-  readMore(article) {
-    console.log(article)
-    this.globalService.selectedArticle = article
   }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core'
+import { GlobalService } from '../services/global.service'
 
 @Component({
   selector: 'app-news-listing',
@@ -8,7 +9,7 @@ import { Component, OnInit, Input } from '@angular/core'
 export class NewsListingComponent implements OnInit {
   @Input() data
   path: any
-  constructor() {}
+  constructor(private globalService: GlobalService) {}
 
   ngOnInit(): void {
     console.log(this.data)
@@ -18,5 +19,8 @@ export class NewsListingComponent implements OnInit {
       { path: 'press release', url: '../press_release' },
       { path: this.data.title, url: '' },
     ]
+  }
+  ngOnDestroy() {
+    this.globalService.selectedArticle = null
   }
 }

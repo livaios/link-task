@@ -77,7 +77,9 @@
           <div class="article_body">
             <p>{{ article.title }}</p>
           </div>
-          <a class="btn btn-clear btn-sm green" (click)="readMore(article)"
+          <a
+            class="btn btn-clear btn-sm green"
+            (click)="globalService.readMore(article)"
             >read more</a
           >
         </div>

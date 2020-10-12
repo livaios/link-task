@@ -1,5 +1,5 @@
 <div class="press">
-  <div class="title">
+  <div class="title" (click)="globalService.navToPress()">
     <h2>Our Latest</h2>
     <h1>Press Releases</h1>
   </div>
@@ -20,7 +20,11 @@
         <div class="article_body">
           <p>{{ article.title }}</p>
         </div>
-        <a class="btn btn-clear btn-sm green" href="#">read more</a>
+        <a
+          class="btn btn-clear btn-sm green"
+          (click)="globalService.readMore(article)"
+          >read more</a
+        >
       </div>
     </div>
   </div>
