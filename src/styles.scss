@@ -1,4 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+// Fonts
+@font-face {
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Calibri'), url('assets/fonts/calibril.woff') format('woff');
+}
+@font-face {
+  font-family: 'SegoeUI';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SegoeUI'), url('assets/fonts/Segoe UI.woff') format('woff');
+}
+@font-face {
+  font-family: 'Optima';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Optima'), url('assets/fonts/OPTIMA.woff') format('woff');
+}
+
+// Colors
 :root {
   --apple: #7cc242;
   --blue-green: #168d91;
@@ -17,6 +38,8 @@ a {
   width: 100%;
   border: solid 2px #ebebeb;
   transform: translateY(360%);
+  -ms-transform: translateY(360%);
+  -webkit-transform: translateY(360%);
   position: fixed;
   z-index: 999;
   background-color: white;

@@ -154,14 +154,20 @@
       .square {
         opacity: 1;
         transform: translate(690%, -160%);
+        -ms-transform: translate(690%, -160%);
+        -webkit-transform: translate(690%, -160%);
         width: 35px;
         height: 35px;
         background-color: var(--apple);
         @media screen and (max-width: 769px) {
           transform: translate(730%, -160%);
+          -ms-transform: translate(730%, -160%);
+          -webkit-transform: translate(730%, -160%);
         }
         i {
           transform: translate(125%, 40%);
+          -ms-transform: translate(125%, 40%);
+          -webkit-transform: translate(125%, 40%);
           color: #eeeeee;
         }
       }

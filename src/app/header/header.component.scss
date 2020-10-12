@@ -43,6 +43,8 @@ a {
 
     .lang {
       transform: translate(28px, -20px);
+      -ms-transform: translate(28px, -20px);
+      -webkit-transform: translate(28px, -20px);
       a {
         margin: auto;
         padding: 3px;
@@ -64,6 +66,8 @@ a {
           border-radius: 11px;
           background-color: var(--teal-blue);
           transform: translate(0, 10px);
+          -ms-transform: translate(0, 10px);
+          -webkit-transform: translate(0, 10px);
           color: white;
         }
         &.A {
