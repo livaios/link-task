@@ -1,95 +1,98 @@
-.carousel-div {
-  position: relative;
-  width: 100%;
-  height: 600px;
-  background-position: center;
-  background-size: cover;
-  &.item_2 {
-    background-image: url('../../assets/layer-13.png');
+.main-layout {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .carousel-div {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    &.item_2 {
+      background-image: url('../../assets/layer-13.png');
+    }
+    &.item_3 {
+      background-image: url('../../assets/layer-14.png');
+    }
+    &.item_4 {
+      background-image: url('../../assets/layer-15.png');
+    }
+    &.item_5 {
+      background-image: url('../../assets/layer-17.png');
+    }
+    &.item_6 {
+      background-image: url('../../assets/layer-27.png');
+    }
+    &.item_7 {
+      background-image: url('../../assets/layer-28.png');
+    }
+    &.item_8 {
+      background-image: url('../../assets/layer-49.png');
+    }
+    &.item_1 {
+      background-image: url('../../assets/layer-55.png');
+    }
   }
-  &.item_3 {
-    background-image: url('../../assets/layer-14.png');
-  }
-  &.item_4 {
-    background-image: url('../../assets/layer-15.png');
-  }
-  &.item_5 {
-    background-image: url('../../assets/layer-17.png');
-  }
-  &.item_6 {
-    background-image: url('../../assets/layer-27.png');
-  }
-  &.item_7 {
-    background-image: url('../../assets/layer-28.png');
-  }
-  &.item_8 {
-    background-image: url('../../assets/layer-49.png');
-  }
-  &.item_1 {
-    background-image: url('../../assets/layer-55.png');
-  }
-}
 
-.main-text {
-  top: 60%;
-  left: 30%;
-  width: 96.66666666666666%;
-  position: absolute;
-  width: 650px;
-  height: 132px;
-  font-family: Optima;
-  font-size: 24px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.21;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-  .text-style-1 {
-    font-size: 30px;
-    color: #c2f83f;
+  .main-text {
+    top: 60%;
+    left: 30%;
+    width: 45%;
+    position: absolute;
+    font-family: Optima;
+    font-size: 24px;
+    line-height: 1.21;
+    text-align: center;
+    color: #ffffff;
+    .text-style-1 {
+      font-size: 30px;
+      color: #c2f83f;
+    }
+    .text-style-2 {
+      font-size: 30px;
+    }
+    .btn-clear {
+      width: 162px;
+      height: 46px;
+      font-family: Optima;
+      font-size: 18px;
+      line-height: 1.9;
+      text-align: center;
+      color: #f2f0f0;
+      background-color: transparent;
+      border: solid 1.5px #ffffff;
+      text-transform: uppercase;
+      margin-right: 15px;
+      &.green {
+        border-color: #8dc043;
+        background-color: #8dc043;
+      }
+      @media screen and (max-width: 769px) {
+        margin-top: 5px;
+      }
+    }
+    @media screen and (max-width: 769px) {
+      top: 40%;
+      left: 20%;
+      width: 60%;
+      font-size: 18px;
+    }
   }
-  .text-style-2 {
-    font-size: 30px;
-  }
-}
 
-.btn-clear {
-  width: 162px;
-  height: 46px;
-  font-family: Optima;
-  font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.9;
-  letter-spacing: normal;
-  text-align: center;
-  color: #f2f0f0;
-  background-color: transparent;
-  border: solid 1.5px #ffffff;
-  text-transform: uppercase;
-  margin-right: 15px;
-  &.green {
-    border-color: #8dc043;
-    background-color: #8dc043;
+  .carousel-control-next {
+    position: absolute;
+    transform: translateY(10%);
+    -webkit-text-stroke: 1px background-color;
   }
-}
-
-.carousel-control-next {
-  position: absolute;
-  transform: translateY(10%);
-  -webkit-text-stroke: 1px background-color;
-}
-.carousel-control-prev {
-  position: absolute;
-  transform: translateY(10%);
-  -webkit-text-stroke: 1px background-color;
-}
-.shadow {
-  width: 100%;
-  height: 600px;
-  opacity: 0.82;
-  position: relative;
+  .carousel-control-prev {
+    position: absolute;
+    transform: translateY(10%);
+    -webkit-text-stroke: 1px background-color;
+  }
+  .shadow {
+    width: 100%;
+    height: 600px;
+    opacity: 0.82;
+    position: relative;
+  }
 }

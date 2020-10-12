@@ -11,34 +11,13 @@ const routes: Routes = [
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       {
         path: 'home',
-        data: {
-          breadcrumb: 'Home',
-        },
+        data: { breadcrumb: 'Home' },
         component: MainLayoutComponent,
       },
       {
-        path: 'media',
-        data: {
-          breadcrumb: 'Media Center',
-        },
-        children: [
-          {
-            path: 'press',
-            data: {
-              breadcrumb: 'Press Releases',
-            },
-            component: PressReleaseComponent,
-            children: [
-              {
-                path: 'news1',
-                data: {
-                  breadcrumb: 'news1',
-                },
-                component: NewsListingComponent,
-              },
-            ],
-          },
-        ],
+        path: 'press_release',
+        data: { breadcrumb: 'Press Release' },
+        component: PressReleaseComponent,
       },
     ],
   },
